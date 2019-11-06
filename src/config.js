@@ -2,7 +2,7 @@ const dev = {
     STRIPE_KEY: "pk_test_WyqbkEV0HJZL4gpqaEegybuj",
     s3: {
         REGION: "us-east-1",
-        BUCKET: "notes-app-2-api-dev-serverlessdeploymentbucket-ze01t26veng2"
+        BUCKET: "notes-app-2-api-dev-attachmentsbucket-13l2j8vmay1wd"
     },
     apiGateway: {
         REGION: "us-east-1",
