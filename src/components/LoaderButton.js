@@ -4,6 +4,8 @@ import "./LoaderButton.css";
 
 export default function LoaderButton({
     isLoading,
+    text,
+    loadingText,
     className = "",
     disabled = false,
     ...props
