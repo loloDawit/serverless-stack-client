@@ -10,11 +10,13 @@ import Notes from "./containers/Notes";
 import Settings from "./containers/Settings";
 import AuthenticatedRoute from "./components/AuthenticatedRoute";
 import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
+import ResetPassword from "./containers/ResetPassword";
 export default function Routes({ appProps }) {
   return (
     <Switch>
       <AppliedRoute path="/" exact component={Home} appProps={appProps} />
       <UnauthenticatedRoute path="/login" exact component={Login} appProps={appProps} />
+      <UnauthenticatedRoute path="/login/reset" exact component={ResetPassword} props={childProps} />
       <UnauthenticatedRoute path="/signup" exact component={Signup} appProps={appProps} />
       <AuthenticatedRoute path="/settings" exact component={Settings} appProps={appProps} />
       <AuthenticatedRoute path="/notes/new" exact component={NewNote} appProps={appProps} />
